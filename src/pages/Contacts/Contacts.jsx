@@ -18,7 +18,7 @@ export default function Contacts() {
   }, [dispatch]);
 
   return (
-    <>
+    <main>
       <Section>
         <Container>
           <H1>Phonebook</H1>
@@ -36,6 +36,6 @@ export default function Contacts() {
           }
         </Container>  
       </Section>
-    </>
+    </main>
   );
 }
