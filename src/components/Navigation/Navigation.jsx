@@ -6,6 +6,9 @@ import { Box } from "../box";
 const Link = styled(NavLink)`
   font-weight: ${p => p.theme.fontWeights.bold};
   color: ${p => p.theme.colors.primary};
+  &.active {
+    color: ${p => p.theme.colors.secondary};
+  }
 `
 
 export const Navigation = () => {
@@ -13,7 +16,7 @@ export const Navigation = () => {
 
   return (
     <Box as="nav" display="flex" gridGap="16px">
-      <Link to="/">Home</Link>
+      <Link to="/" end>Home</Link>
       {isLoggedIn && (<Link to="/contacts">Contacts</Link>)}
     </Box>
   );

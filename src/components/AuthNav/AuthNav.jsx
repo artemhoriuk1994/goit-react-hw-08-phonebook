@@ -5,6 +5,9 @@ import { Box } from "../box";
 const Link = styled(NavLink)`
   font-weight: ${p => p.theme.fontWeights.bold};
   color: ${p => p.theme.colors.primary};
+  &.active {
+    color: ${p => p.theme.colors.secondary};
+  }
 `
 export const AuthNav = () => {
   return (
