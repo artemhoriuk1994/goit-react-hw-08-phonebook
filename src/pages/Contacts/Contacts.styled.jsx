@@ -10,10 +10,6 @@ export const Container = styled.div`
   border-radius: ${p => p.theme.radii.sm};
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
 `
-export const H1 = styled.h1`
-  font-size: ${p => p.theme.fontSizes.l};
-  color: ${p => p.theme.colors.primary};
-`
 export const H2 = styled.h2`
   font-size: ${p => p.theme.fontSizes.m};
   color: ${p => p.theme.colors.primary};

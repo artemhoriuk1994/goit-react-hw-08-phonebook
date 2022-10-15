@@ -45,7 +45,7 @@ export const contactsSlice = createSlice({
       state.isLoading = false;
       state.error = null;
       const idx = state.items.findIndex(
-        contact => contact.id === action.payload.id
+        contact => contact.id === action.meta.arg
       );
       state.items.splice(idx, 1);
     },

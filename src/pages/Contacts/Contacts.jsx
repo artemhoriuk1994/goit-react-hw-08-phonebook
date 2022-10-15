@@ -5,7 +5,7 @@ import { selectIsLoading, selectContacts } from 'redux/contacts/selectors';
 import { ContactsForm } from 'components/ContactsForm/ContactsForm';
 import { Filter } from 'components/Filter/Filter';
 import { ContactsList } from 'components/ContactsList/ContactsList';
-import { Section, Container, H1, H2, InfoMessage } from "./Contacts.styled";
+import { Section, Container, H2, InfoMessage } from "./Contacts.styled";
 import { BiInfoCircle } from "react-icons/bi";
 
 export default function Contacts() {
@@ -21,7 +21,7 @@ export default function Contacts() {
     <main>
       <Section>
         <Container>
-          <H1>Phonebook</H1>
+          <H2>Phonebook</H2>
           <ContactsForm />
         </Container>
       </Section>
